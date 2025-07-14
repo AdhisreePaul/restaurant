@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Spice Route</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="main-header" class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">The Spice Route</a>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1 class="section-title">Get In Touch</h1>
+                <div class="contact-grid">
+                    <!-- Left: Map and Details -->
+                    <div class="contact-info">
+                        <h2>Visit Us</h2>
+                        <p>Our doors are always open for you to experience authentic Indian hospitality.</p>
+                        
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.228023196943!2d144.9537353159042!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1620984954719!5m2!1sen!2sau" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy"
+                                title="Restaurant Location">
+                            </iframe>
+                        </div>
+
+                        <div class="contact-details">
+                            <p><strong>Address:</strong> 123 Spice Lane, Foodie City, FC 45678</p>
+                            <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:contact@thespiceroute.com">contact@thespiceroute.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Reservation Prompt -->
+                    <div class="reservation-prompt">
+                        <h2>Book a Table</h2>
+                        <p>Planning a visit? We recommend making a reservation to ensure your spot, especially on weekends.</p>
+                        <button id="open-reservation-modal" class="cta-button">Make a Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Reservation Modal -->
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Make a Reservation</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="res-name">Full Name</label>
+                    <input type="text" id="res-name" name="name" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="res-email">Email Address</label>
+                    <input type="email" id="res-email" name="email" required>
+                    <small class="error-message"></small>
+                </div>
+                <div class="form-group">
+                    <label for="res-phone">Phone Number</label>
+                    <input type="tel" id="res-phone" name="phone" required>
+                     <small class="error-message"></small>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="res-date">Date</label>
+                        <input type="date" id="res-date" name="date" required>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-time">Time</label>
+                        <input type="time" id="res-time" name="time" required>
+                        <small class="error-message"></small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="res-guests">Number of Guests</label>
+                    <input type="number" id="res-guests" name="guests" min="1" required>
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit" class="cta-button">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Spice Lane, Foodie City</p>
+                <p>Email: <a href="mailto:contact@thespiceroute.com">contact@thespiceroute.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="/images/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="/images/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="/images/icons/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <p>Get updates on new dishes and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Spice Route. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - The Spice Route</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/reviews.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="main-header" class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">The Spice Route</a>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reviews-section">
+            <div class="container">
+                <h1 class="section-title">What Our Customers Say</h1>
+                
+                <!-- Reviews will be dynamically inserted here -->
+                <div id="reviews-grid" class="reviews-grid"></div>
+
+                <!-- Review Form -->
+                <div class="review-form-container">
+                    <h2>Write a Review</h2>
+                    <form id="review-form">
+                        <div class="form-group">
+                            <label for="reviewer-name">Your Name</label>
+                            <input type="text" id="reviewer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Rating</label>
+                            <div class="star-rating">
+                                <input type="radio" id="star5" name="rating" value="5" required/><label for="star5" title="5 stars"></label>
+                                <input type="radio" id="star4" name="rating" value="4"/><label for="star4" title="4 stars"></label>
+                                <input type="radio" id="star3" name="rating" value="3"/><label for="star3" title="3 stars"></label>
+                                <input type="radio" id="star2" name="rating" value="2"/><label for="star2" title="2 stars"></label>
+                                <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="1 star"></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-text">Your Review</label>
+                            <textarea id="review-text" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Spice Lane, Foodie City</p>
+                <p>Email: <a href="mailto:contact@thespiceroute.com">contact@thespiceroute.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="/images/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="/images/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="/images/icons/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <p>Get updates on new dishes and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Spice Route. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/reviews.js"></script>
+</body>
+</html> 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - The Spice Route</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="main-header" class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">The Spice Route</a>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Home</a> &gt; <span>Menu</span>
+            </div>
+        </div>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <div class="container">
+                <h1 class="menu-title">Our Menu</h1>
+
+                <!-- Filters -->
+                <div class="menu-filters">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="Breads">Breads</button>
+                        <button class="filter-btn" data-category="Main-Course">Main Course</button>
+                        <button class="filter-btn" data-category="Desserts">Desserts</button>
+                        <button class="filter-btn" data-category="Cold-Drinks">Cold Drinks</button>
+                    </div>
+                    <div class="veg-toggle">
+                        <label class="switch">
+                            <input type="checkbox" id="veg-only-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <span>Veg Only</span>
+                    </div>
+                </div>
+
+                <!-- Menu Categories -->
+                <div class="menu-categories">
+                    <div id="breads-section" class="menu-category">
+                        <h2>Breads</h2>
+                        <div class="menu-grid" id="breads-grid"></div>
+                    </div>
+                    <div id="main-course-section" class="menu-category">
+                        <h2>Main Course</h2>
+                        <div class="menu-grid" id="main-course-grid"></div>
+                    </div>
+                    <div id="desserts-section" class="menu-category">
+                        <h2>Desserts</h2>
+                        <div class="menu-grid" id="desserts-grid"></div>
+                    </div>
+                    <div id="cold-drinks-section" class="menu-category">
+                        <h2>Cold Drinks</h2>
+                        <div class="menu-grid" id="cold-drinks-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Spice Lane, Foodie City</p>
+                <p>Email: <a href="mailto:contact@thespiceroute.com">contact@thespiceroute.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="/images/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" aria-label="Instagram"><img src="/images/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" aria-label="Twitter"><img src="/images/icons/twitter.svg" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Join Our Newsletter</h4>
+                <p>Get updates on new dishes and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Spice Route. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/menu.js"></script>
+</body>
+</html> 
