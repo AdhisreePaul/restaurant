@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Check if we are on the reviews page
     const reviewsGrid = document.getElementById('reviews-grid');
+    if (!reviewsGrid) {
+        return; // Stop if this is not the reviews page
+    }
+
     const reviewForm = document.getElementById('review-form');
 
     // Default reviews if localStorage is empty
