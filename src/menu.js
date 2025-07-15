@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Check if we are on the menu page by looking for a key element
     const menuGridContainer = document.getElementById('breads-grid');
     if (!menuGridContainer) {
-        return; // Stop if this is not the menu page
+        return; // This is not the menu page, so stop.
     }
 
     const menuData = {
